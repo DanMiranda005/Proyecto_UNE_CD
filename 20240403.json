@@ -1,0 +1,85 @@
+{
+    "sen_info": {
+        "fecha": "03-04-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2306,
+            "demanda_max": 2820,
+            "deficit": 514,
+            "pronostico": {
+                "afectacion": 584
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2140,
+                "demanda": 2160,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": null
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 395,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 5",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 1 y 2",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Rente"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 65,
+                        "tipo": "Centrales de generacion distribuida, la central fuel de Moa y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 587
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": " entrada de 6 motores en la central fuel de Moa con 96 MW y la entrada de la unidad 6 de la CTE Rente    ",
+                "razon": "se encuentran fuera por combustible",
+                "cantidad_mw": 70
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 489,
+            "hora": "20:10",
+            "desc": "coincidente con la hora pico, superior a la planificada por la no entrada de la Unidad 6 de la CTE Nuevitas"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "09:28",
+            "hora_rest": "00:37"
+        }
+    }
+}

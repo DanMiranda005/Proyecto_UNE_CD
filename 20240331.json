@@ -1,0 +1,77 @@
+{
+    "sen_info": {
+        "fecha": "15-07-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": null,
+            "demanda_max": null,
+            "deficit": null,
+            "pronostico": {
+                "afectacion": null
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2365,
+                "demanda": 1700,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": "no se estiman afectaciones"
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 1",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 59,
+                        "tipo": "Centrales de generacion distribuida, la central fuel de Moa y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 478
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida, el completamiento del Ciclo Combinado de Energás Jaruco y la entrada de la unidad 1 de la CTE Ernesto Guevara",
+                "razon": "se encuentran fuera por combustible",
+                "cantidad_mw": 188
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 0,
+            "hora": "",
+            "desc": "no se afecto el servicio"
+        },
+        "dia_anterior": {
+            "desc": "null",
+            "horas": null,
+            "hora_rest": "null"
+        }
+    }
+}

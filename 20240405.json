@@ -1,0 +1,77 @@
+{
+    "sen_info": {
+        "fecha": "05-04-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2655,
+            "demanda_max": 2600,
+            "reserva": 55,
+            "pronostico": {
+                "afectacion": "no se pronostican afectaciones"
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2250,
+                "demanda": 1980,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": "No se estiman afectaciones por déficit de capacidad de generación"
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 482,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": " Nuevitas"
+                    },
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": " Mariel"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 61,
+                        "tipo": "Centrales de generacion distribuida, la patana de Regla y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 564
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida, la entrada de la unidad 2 de la CTE Santa Cruz (en proceso de arranque), la entrada de la patana de Regla",
+                "razon": "se encuentran fuera por combustible y mantenimiento",
+                "cantidad_mw": 405
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 149,
+            "hora": "20:00",
+            "desc": "coincidente con la hora pico, superior a la planificada por la no entrada de la Unidad 6 de la CTE Nuevitas"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "03:32",
+            "hora_rest": "21:12"
+        }
+    }
+}

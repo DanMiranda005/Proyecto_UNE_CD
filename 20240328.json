@@ -1,0 +1,85 @@
+{
+    "sen_info": {
+        "fecha": "28-03-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": null,
+            "demanda_max": null,
+            "deficit": null,
+            "pronostico": {
+                "afectacion": null
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2080,
+                "demanda": 2050,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": 250
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 5",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 1",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    },
+                    {
+                       "nombre": "Unidad 6",
+                        "CTE": "Rente" 
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 58,
+                        "tipo": "Centrales de generacion distribuida, las patanas de Mariel, la central fuel de Mariel, la central fuel de Moa y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 776
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida",
+                "razon": "se encuentran fuera por combustible",
+                "cantidad_mw": 120
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 587,
+            "hora": "20:40",
+            "desc": "coincidente con la hora pico, superior a la planificada por la no entrada de la Unidad 6 de la CTE Nuevitas"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "10:24",
+            "hora_rest": "2:03"
+        }
+    }
+}

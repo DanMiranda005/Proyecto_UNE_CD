@@ -1,0 +1,81 @@
+{
+    "sen_info": {
+        "fecha": "25-03-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2500,
+            "demanda_max": 2700,
+            "deficit": 200,
+            "pronostico": {
+                "afectacion": 270
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2300,
+                "demanda": 1800,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": 200
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 5",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 3",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 57,
+                        "tipo": "Centrales de generacion distribuida",
+                        "razon": "Falta de combustible",
+                        "afectacion": 360
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida",
+                "razon": "se encuentran fuera por combustible",
+                "cantidad_mw": 120
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 200,
+            "hora": "10:50",
+            "desc": "no se afectó el servicio por déficit de capacidad de generación"
+            },
+        "dia_anterior": {
+            "desc": "se afectó el servicio por altas transferencia hacia la zona centro-oriental",
+            "horas": "7:32",
+            "hora_rest": "11:57"
+            }
+    }
+}

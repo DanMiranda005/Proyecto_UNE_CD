@@ -1,0 +1,77 @@
+{
+    "sen_info": {
+        "fecha": "04-04-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2600,
+            "demanda_max": 2750,
+            "deficit": 150,
+            "pronostico": {
+                "afectacion": 220
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2250,
+                "demanda": 2180,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": "No se estiman afectaciones por déficit de capacidad de generación"
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 448,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel "
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas "
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 69,
+                        "tipo": "Centrales de generacion distribuida y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 472
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "La entrada de la unidad 2 de la CTE Santa Cruz, la entrada de la unidad 3 de Energas Jaruco y el completamiento de la unidad 6 de esta misma central y la recuperación en centrales de la generación distribuida ",
+                "razon": "se encuentran fuera por combustible",
+                "cantidad_mw": 350
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 405,
+            "hora": "20:20",
+            "desc": "coincidente con la hora pico, superior a la planificada por la no entrada de la Unidad 6 de la CTE Nuevitas"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "12:25",
+            "hora_rest": "00:33"
+        }
+    }
+}

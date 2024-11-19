@@ -1,0 +1,73 @@
+{
+    "sen_info": {
+        "fecha": "06-04-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2790,
+            "demanda_max": 2600,
+            "reserva": 190,
+            "pronostico": {
+                "afectacion": "no se pronostican afectaciones al servicio por déficit de capacidad de generación"
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2528,
+                "demanda": 1900,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": "No se estiman afectaciones por déficit de capacidad de generación"
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 481,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mareil "
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 42,
+                        "tipo": "Centrales de generacion distribuida y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 265
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida, la patana de Santiago de Cuba, la entrada de cuatro motores en la patana de Melones",
+                "razon": "se encuentran fuera por mantenimiento",
+                "cantidad_mw": 262
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": null,
+            "hora": null,
+            "desc": null
+        },
+        "dia_anterior": {
+            "desc": "no se afectó el servicio en el SEN por déficit de capacidad de generación",
+            "horas": null,
+            "hora_rest": null
+        }
+    }
+}

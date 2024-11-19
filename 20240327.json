@@ -1,0 +1,85 @@
+{
+    "sen_info": {
+        "fecha": "27-03-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2540,
+            "demanda_max": 2700,
+            "deficit": 160,
+            "pronostico": {
+                "afectacion": 230
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2300,
+                "demanda": 2050,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": null
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 5",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 1",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    },
+                    {
+                        "nombre": "Unidad 3",
+                        "CTE": "Rente"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 55,
+                        "tipo": "Centrales de generacion distribuida y la patana de Santiago de Cuba",
+                        "razon": "Falta de combustible",
+                        "afectacion": 487
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida, la unidad 5 de la CTE Mariel, la unidad 3 de la CTE Rente y el completamiento de la unidad 6 de Energas Jaruco",
+                "razon": "se encuentran fuera por mantenimiento",
+                "cantidad_mw": 240
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 165,
+            "hora": "20:20",
+            "desc": "coincidente con la hora pico, superior a la planificada por la no entrada de la Unidad 6 de la CTE Nuevitas"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "3:22",
+            "hora_rest": "21:38"
+        }
+    }
+}

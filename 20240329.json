@@ -1,0 +1,77 @@
+{
+    "sen_info": {
+        "fecha": "29-03-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": null,
+            "demanda_max": null,
+            "deficit": null,
+            "pronostico": {
+                "afectacion": null
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2100,
+                "demanda": 1900,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": 100
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 1",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel "
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas "
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 74,
+                        "tipo": "Centrales de generacion distribuida, la patana de Mariel, el fuel de Mariel, el fuel de Moa, la patana de Santiago de Cuba y cinco centrales con bajas coberturas",
+                        "razon": "Falta de combustible",
+                        "afectacion": 880
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida, la entrada de siete motores del fuel de Mariel, la entrada de las patanas 1 y 3 de Mariel",
+                "razon": "se encuentran fuera por mantenimiento",
+                "cantidad_mw": 357
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": 900,
+            "hora": "17:50",
+            "desc": "null"
+        },
+        "dia_anterior": {
+            "desc": "se afecto el servicio por deficit de capacidad de generacion",
+            "horas": "25:11",
+            "hora_rest": "00:30"
+        }
+    }
+}

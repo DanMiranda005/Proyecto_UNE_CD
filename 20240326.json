@@ -1,0 +1,85 @@
+{
+    "sen_info": {
+        "fecha": "26-03-2024",
+        "_comentario": "Toda esta informacion se expresa en MW",
+        "estimacion": {
+            "disponibilidad": 2555,
+            "demanda_max": 2660,
+            "deficit": 105,
+            "pronostico": {
+                "afectacion": 175
+            }
+        },
+        "x_horario": {
+            "mañana": {
+                "disponibilidad": 2437,
+                "demanda": 1950,
+                "totalidad": true
+            },
+            "mediodia": {
+                "pronostico": {
+                    "afectacion": false
+                }
+            }
+        },
+        "termoelectricas": {
+            "_comentario": "Esto quiere decir: Limitaciones en la generacion termica",
+            "lim_gen_term": 431,
+            "fuera": {
+                "averias": [
+                    {
+                        "nombre": "Unidad 5",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 1",
+                        "CTE": "Santa Cruz"
+                    },
+                    {
+                        "nombre": "Unidad 2",
+                        "CTE": "Felton"
+                    }
+                ],
+                "mantenimiento":[
+                    {
+                        "nombre": "Unidad 8",
+                        "CTE": "Mariel"
+                    },
+                    {
+                        "nombre": "Unidad 6",
+                        "CTE": "Nuevitas"
+                    },
+                    {
+                         "nombre": "Unidad 3",
+                        "CTE": "Rente"
+                    }
+                ],
+                "no_servicio": [
+                    {
+                        "cantidad": 53,
+                        "tipo": "Centrales de generacion distribuida y la patana de Santiago de Cuba ",
+                        "razon": "Falta de combustible",
+                        "afectacion": 347
+                    }
+                ]
+            }
+        },
+        "pico": {
+            "estimacion": {
+                "desc": "entrada de motores de generacion distribuida",
+                "razon": "se ecuentran fuera por mantenimiento",
+                "cantidad_mw": 118
+            }
+        },
+        "max_afect_dia": {
+            "cantidad_mw": null,
+            "hora": "null",
+            "desc": "null"
+        },
+        "dia_anterior": {
+            "desc": "null",
+            "horas": null,
+            "hora_rest": "null"
+        }
+    }
+}
